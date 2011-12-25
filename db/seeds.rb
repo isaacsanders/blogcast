@@ -13,6 +13,7 @@ user = User.new
 
 user.name = "admin"
 user.initials = "a.d.min"
+user.role = "admin"
 user.email = "admin@localhost.host"
 user.login = "admin"
 user.password = "admin"

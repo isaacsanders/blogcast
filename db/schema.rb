@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100704180607) do
+ActiveRecord::Schema.define(:version => 20111225175828) do
 
   create_table "comments", :force => true do |t|
     t.string   "name"
@@ -80,6 +80,7 @@ ActiveRecord::Schema.define(:version => 20100704180607) do
     t.string   "current_login_ip"
     t.string   "last_login_ip"
     t.string   "login"
+    t.string   "role"
   end
 
 end
