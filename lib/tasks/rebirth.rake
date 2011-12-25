@@ -1,9 +1,9 @@
-require 'Wordpress'
+require_relative '../wordpress'
 
 #Usage:rake rebirth:wordpress["/export/path/wordpress.xml"]
 namespace :rebirth do
   desc "So my Apprentice, you seek to leave the realm of wordpress?"
-  task :wordpress, :scroll, :needs => :environment do |t, args|
+  task :wordpress, [ :scroll ] => [ :environment ] do |t, args|
     args.with_defaults(:scroll => 'wordpress.xml')
     puts "--->Here are my wordly posessions my Liege: #{args[:scroll]}"
     puts "--->The gates of Wordpress open and the faithful enter."
